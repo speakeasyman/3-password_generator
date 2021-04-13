@@ -14,3 +14,18 @@ The password Generator which is the 3rd week homework assignment
 
 4.0 
     Launch:
+        The Website can be located at: https://speakeasyman.github.io/3-password_generator/
+
+        The Repo can be located at: https://github.com/speakeasyman/3-password_generator
+
+5.0
+    My goals:
+        So, I made four arrays that can be summated to create the character list for the password database. When the user clicks on the button, they will be prompted to dictate the list the length of their generated password. Then be able to select whether to include lowercase, uppercase, numbers, and/or special characters. They can use any combination of the four arrays I created.
+
+6.0
+    Examples from the website:
+        ![Password Length question](./assets/passwordlength.png)
+        This is where the length between 8 and 128 characters are entered.
+
+        ![Lowercase selection](./assets/lowercase.PNG)
+        Select "OK" for yes, and cancel for no.
