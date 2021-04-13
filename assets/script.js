@@ -24,6 +24,9 @@ function writePassword() {
     var password = examplePassword(); //Part of the starter code from Noah
   var passwordText = document.querySelector('#password'); //Part of the starter Code from Noah
   passwordText.value = password; // Part of the starter code from Noah
+   reset();
+   console.log(test);
+   console.log(test2);
   }
 }
 // Add event listener to generate button also starter code provided by Noah
@@ -36,42 +39,51 @@ function examplePassword() {
   for (var i = 0; i < length; ++i) {
       retVal += test[Math.floor(test.length * Math.random())];
   }
+  console.log(test);
   return retVal; 
   }
   //Function if they select ok, the array lowletters will be added to test array
 function lowlettersfx() {  
   var r = confirm('Password to contain lower case alphabet?')
-  if (r == true) { 
+  if (r === true) { 
     test = test2.concat(lowletters);
     console.log(test);
     console.log(length);    
-  }
+  } else if (r == false) {
+    test = test2.concat(test)};
+    console.log(test);
 }
 //Function if they select ok, the array upletters will be added to the test array
 function uplettersfx() {  
   var r = confirm('Password to contain upper case alphabet?')
-  if (r == true) { 
+  if (r === true) { 
     test = test2.concat(test,upletters);
     console.log(test);    
-  }
+  } else if (r == false) {
+    test = test2.concat(test)};
+    console.log(test);
 }
 //Function if they select ok, the array numeric is added 3 times to the test array. I added numeric 3 times, because the numeric array is much smaller
 //than the other two. Alphabet = 26, and special = 32. 3x10 = 30, so it is now approximately evenly weighted. Alternatively, I could have just
 //made the array in triplicate up top, but this seemed 'drier'.
 function numericfx() {  
   var r = confirm('Password to contain numeric characters?')
-  if (r == true) { 
+  if (r === true) { 
     test = test2.concat(test,numeric,numeric,numeric);
     console.log(test);    
-  }
+  } else if (r == false) {
+    test = test2.concat(test)};
+    console.log(test);
 }
 //Function for special characters. If the user clicks ok, the specialchar array is added to test array.
 function specialcharfx() {  
   var r = confirm('Password to contain special characters?')
-  if (r == true) { 
+  if (r === true) { 
     test = test2.concat(test,specialchar);
     console.log(test);    
-  }
+  } else if (r == false) {
+    test = test2.concat(test)};
+    console.log(test);
 }
 //So, because I gave test and test2 an inital set up of = 'null', the number of nulls was equal to 
 // the number of 'ok' selected by the confirmation windows. When I checked the console.log(test)
@@ -83,3 +95,8 @@ function shift() {
     test.shift();
     shift();
   }}
+// A function to reset the variables, if this is not included, the test and test2 arrays will not be at the initial null value.
+function reset() {
+  test = ['null'];
+  test2 = ['null'];
+}
