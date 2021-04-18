@@ -1,5 +1,5 @@
 // Assignment Code
-//Arrays of possible password combinators. test and test2 were used as placeholders. I probably should have named them better
+//Arrays of possible password combinators. test and test2 were used as placeholders. 
 var lowletters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var upletters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var numeric = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -11,7 +11,7 @@ var generateBtn = document.querySelector('#generate');
 
 //The function to find out through prompt/confirmation windows for the User to decide on the variable 'length' also select which arrays to include in the random generation
 function writePassword() {
-   length = prompt("How long do you want your password to be");
+   length = prompt("How long do you want your password to be. Password must be between 8 and 128 characters");
   if (length < 8 || length >= 129) { 
     alert('Password must be between 8 and 128 characters');
     location.reload();
@@ -44,7 +44,7 @@ function examplePassword() {
   }
   //Function if they select ok, the array lowletters will be added to test array
 function lowlettersfx() {  
-  var r = confirm('Password to contain lower case alphabet?')
+  var r = confirm('Would you like your password to contain the lower case alphabet?')
   if (r === true) { 
     test = test2.concat(lowletters);
     console.log(test);
@@ -55,7 +55,7 @@ function lowlettersfx() {
 }
 //Function if they select ok, the array upletters will be added to the test array
 function uplettersfx() {  
-  var r = confirm('Password to contain upper case alphabet?')
+  var r = confirm('Would you like your password to contain the upper case alphabet?')
   if (r === true) { 
     test = test2.concat(test,upletters);
     console.log(test);    
