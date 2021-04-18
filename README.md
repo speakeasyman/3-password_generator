@@ -27,14 +27,13 @@ The password Generator which is the 3rd week homework assignment
 
 
 
-6.0
-    Examples from the website:
-        ![Password Length question](./assets/passwordlength.png)
-        This is where the length between 8 and 128 characters are entered.
+6.0 In Use:
+<br>
+        ![Password_Length_question](./assets/passwordlength.png) 
+        ![Password_lower_case](./assets/lowercase.png)
+        ![Password_output](./assets/output.png)
+<br>
+Examples from the website:
+This is where the length between 8 and 128 characters are entered. The prompts will ask for which type of characters you want selected. Password will output.
 
 
-
-
-
-        ![Lowercase selection](./assets/lowercase.PNG)
-        Select "OK" for yes, and cancel for no.
